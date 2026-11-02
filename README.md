@@ -8,7 +8,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**26 problems solved** — 17 easy, 9 medium, 0 hard.
+**27 problems solved** — 17 easy, 10 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -18,10 +18,11 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Array, String, Trie | [Python](0014-longest-common-prefix/) | 2026-10-31 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Array, Two Pointers | [Java](0026-remove-duplicates-from-sorted-array/) | 2026-10-31 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Array, Hash Table, String, Sorting | [Python](0049-group-anagrams/) | 2026-10-31 |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium | Array, Divide and Conquer, Dynamic Programming | [Python](0053-maximum-subarray/) | 2026-11-02 |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | Array, Hash Table, Matrix | [Java](0073-set-matrix-zeroes/) | 2026-10-31 |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | Array, Two Pointers, Sorting | [Java](0088-merge-sorted-array/) | 2026-10-31 |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Array, Dynamic Programming | [Java](0121-best-time-to-buy-and-sell-stock/) | 2026-10-31 |
-| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Two Pointers, String | [Java](0125-valid-palindrome/) | 2026-10-31 |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Array, Dynamic Programming | [Java, Python](0121-best-time-to-buy-and-sell-stock/) | 2026-11-02 |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Two Pointers, String | [Java, Python](0125-valid-palindrome/) | 2026-11-02 |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | Medium | Two Pointers, String | [Java](0151-reverse-words-in-a-string/) | 2026-10-31 |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting, Boyer–Moore Majority Vote Algorithm | [Java](0169-majority-element/) | 2026-10-31 |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium | Array, Math, Two Pointers | [Java](0189-rotate-array/) | 2026-10-31 |
