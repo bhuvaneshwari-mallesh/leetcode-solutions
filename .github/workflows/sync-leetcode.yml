@@ -20,6 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: make_index.py reads each problem's last commit date, and a
+          # shallow clone makes every folder report the single fetched commit's date.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
