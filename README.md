@@ -1,5 +1,7 @@
 # LeetCode Solutions
 
+[![Sync LeetCode](https://github.com/bhuvaneshwari-mallesh/leetcode-solutions/actions/workflows/sync-leetcode.yml/badge.svg)](https://github.com/bhuvaneshwari-mallesh/leetcode-solutions/actions/workflows/sync-leetcode.yml)
+
 My accepted LeetCode solutions. Each problem has its own folder with the solution
 and a short README linking back to the problem. Everything here is synced
 automatically by a GitHub Action, and every commit is dated to the moment I
