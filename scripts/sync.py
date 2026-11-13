@@ -130,8 +130,8 @@ def git(*args, env=None):
                           capture_output=True, text=True).stdout
 
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-README_MODEL = os.environ.get("README_MODEL", "claude-haiku-5-5")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+README_MODEL = os.environ.get("README_MODEL", "gemini-2.0-flash")
 
 README_PROMPT = """You are writing the README for one LeetCode problem folder in a \
 personal solutions repo. Match this exact structure and tone - it should read like a \
@@ -175,7 +175,7 @@ def generate_readme_body(q, folder):
     README, using whatever solution file(s) currently sit in its folder. Returns
     None (never raises) if generation isn't possible, so callers can fall back to
     the plain title/difficulty/topics README instead of breaking the sync."""
-    if not ANTHROPIC_API_KEY:
+    if not GEMINI_API_KEY:
         return None
 
     code_blocks = "\n\n".join(
@@ -191,24 +191,18 @@ def generate_readme_body(q, folder):
         title=q["title"], difficulty=q["difficulty"], tags=tags, code_blocks=code_blocks,
     )
     body = json.dumps({
-        "model": README_MODEL,
-        "max_tokens": 1024,
-        "messages": [{"role": "user", "content": prompt}],
+        "contents": [{"parts": [{"text": prompt}]}],
     }).encode()
+    url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+           f"{README_MODEL}:generateContent?key={GEMINI_API_KEY}")
     req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages",
-        data=body,
-        headers={
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
+        url, data=body, headers={"Content-Type": "application/json"},
     )
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 data = json.load(resp)
-            return data["content"][0]["text"].strip()
+            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
         except Exception as e:
             print(f"  README generation attempt {attempt + 1} failed: {e}")
             time.sleep(5 * 2 ** attempt)

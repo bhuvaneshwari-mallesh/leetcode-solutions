@@ -42,7 +42,7 @@ jobs:
           # Optional: when set, each synced problem's README is auto-written by the
           # model (Approach / Complexity / Key pattern). Unset -> falls back to a
           # bare title/difficulty/topics README instead of failing the sync.
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/sync.py
 
       # These run even when the sync step fails, so that submissions already
