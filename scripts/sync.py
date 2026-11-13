@@ -131,7 +131,10 @@ def git(*args, env=None):
 
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
-README_MODEL = os.environ.get("README_MODEL", "gemini-2.0-flash")
+# "-latest" is a Google-maintained alias that always points at their current
+# recommended Flash model, instead of a specific dated version (e.g.
+# gemini-2.0-flash) that eventually gets retired and starts 404ing.
+README_MODEL = os.environ.get("README_MODEL", "gemini-flash-latest")
 
 README_PROMPT = """You are writing the README for one LeetCode problem folder in a \
 personal solutions repo. Match this exact structure and tone - it should read like a \
@@ -203,6 +206,11 @@ def generate_readme_body(q, folder):
             with urllib.request.urlopen(req, timeout=60) as resp:
                 data = json.load(resp)
             return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode(errors="replace")[:300]
+            print(f"  README generation attempt {attempt + 1} failed: "
+                  f"HTTP {e.code} - {detail}")
+            time.sleep(5 * 2 ** attempt)
         except Exception as e:
             print(f"  README generation attempt {attempt + 1} failed: {e}")
             time.sleep(5 * 2 ** attempt)

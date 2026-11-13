@@ -80,7 +80,7 @@ falls back to a plain title/difficulty/topics header.
   Secrets, never in this repo. Same goes for `GEMINI_API_KEY`.
 - `.leetcode-sync.json` records the newest synced submission so nothing is
   committed twice.
-- README generation uses `gemini-2.0-flash` by default (set `README_MODEL`
+- README generation uses `gemini-flash-latest` by default (set `README_MODEL`
   to override) — cheap and fast, since the task is a fixed, structured
   write-up rather than anything requiring deeper reasoning.
 - Run locally: `LEETCODE_SESSION=... GEMINI_API_KEY=... python scripts/sync.py`,
