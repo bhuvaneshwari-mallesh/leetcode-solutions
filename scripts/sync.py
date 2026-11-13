@@ -134,7 +134,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 # "-latest" is a Google-maintained alias that always points at their current
 # recommended Flash model, instead of a specific dated version (e.g.
 # gemini-2.0-flash) that eventually gets retired and starts 404ing.
-README_MODEL = os.environ.get("README_MODEL", "gemini-flash-latest")
+README_MODEL = os.environ.get("README_MODEL", "gemini-flash-lite-latest")
 
 README_PROMPT = """You are writing the README for one LeetCode problem folder in a \
 personal solutions repo. Match this exact structure and tone - it should read like a \
