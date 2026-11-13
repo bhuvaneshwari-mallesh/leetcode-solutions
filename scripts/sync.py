@@ -130,6 +130,91 @@ def git(*args, env=None):
                           capture_output=True, text=True).stdout
 
 
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+README_MODEL = os.environ.get("README_MODEL", "claude-haiku-5-5")
+
+README_PROMPT = """You are writing the README for one LeetCode problem folder in a \
+personal solutions repo. Match this exact structure and tone - it should read like a \
+programmer explaining their own solution, not a tutorial.
+
+## Approach
+
+**Brute force:** what the naive approach is, in 1-3 sentences (a short code snippet \
+is fine if it helps). Why it falls short (complexity, or a constraint it violates).
+
+**Optimized:** the approach actually used in the code below. Explain *why* it works \
+in a few sentences - the key insight, not just a restatement of the code.
+
+If multiple languages are given and their approaches genuinely differ, call out the \
+difference briefly instead of writing two separate sections.
+
+## Complexity
+
+A small markdown table: rows for Time and Space, columns for brute force vs the \
+approach(es) actually used.
+
+## Key pattern
+
+One or two sentences naming the reusable pattern/technique this problem demonstrates, \
+and where else it tends to show up.
+
+Output ONLY the markdown body above (starting with "## Approach") - no title, no \
+difficulty/topics line (those are added separately), no preamble, no code fences \
+around the whole thing.
+
+Problem: {title} ({difficulty})
+Topics: {tags}
+
+Solution code:
+{code_blocks}
+"""
+
+
+def generate_readme_body(q, folder):
+    """Ask the LLM for the Approach/Complexity/Key pattern body of a problem's
+    README, using whatever solution file(s) currently sit in its folder. Returns
+    None (never raises) if generation isn't possible, so callers can fall back to
+    the plain title/difficulty/topics README instead of breaking the sync."""
+    if not ANTHROPIC_API_KEY:
+        return None
+
+    code_blocks = "\n\n".join(
+        f"```{f.suffix.lstrip('.')}\n{f.read_text(encoding='utf-8')}\n```"
+        for f in sorted(folder.glob("*"))
+        if f.name != "README.md"
+    )
+    if not code_blocks:
+        return None
+
+    tags = ", ".join(t["name"] for t in q["topicTags"]) or "-"
+    prompt = README_PROMPT.format(
+        title=q["title"], difficulty=q["difficulty"], tags=tags, code_blocks=code_blocks,
+    )
+    body = json.dumps({
+        "model": README_MODEL,
+        "max_tokens": 1024,
+        "messages": [{"role": "user", "content": prompt}],
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=body,
+        headers={
+            "x-api-key": ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+    )
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.load(resp)
+            return data["content"][0]["text"].strip()
+        except Exception as e:
+            print(f"  README generation attempt {attempt + 1} failed: {e}")
+            time.sleep(5 * 2 ** attempt)
+    return None
+
+
 def commit_submission(sub, state):
     slug = sub["title_slug"]
     q = question_info(slug)
@@ -140,12 +225,14 @@ def commit_submission(sub, state):
     (folder / f"{slug}.{ext}").write_text(sub["code"].rstrip() + "\n", encoding="utf-8")
 
     tags = ", ".join(t["name"] for t in q["topicTags"]) or "-"
-    (folder / "README.md").write_text(
+    header = (
         f"# [{q['questionFrontendId']}. {q['title']}]({BASE}/problems/{slug}/)\n\n"
         f"**Difficulty:** {q['difficulty']}  \n"
-        f"**Topics:** {tags}\n",
-        encoding="utf-8",
+        f"**Topics:** {tags}\n"
     )
+    body = generate_readme_body(q, folder)
+    readme = f"{header}\n{body}\n" if body else header
+    (folder / "README.md").write_text(readme, encoding="utf-8")
 
     state["last_timestamp"] = int(sub["timestamp"])
     save_state(state)

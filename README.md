@@ -55,6 +55,12 @@ The table below is generated from the folders by `scripts/make_index.py`.
 `scripts/sync.py` to pull any new accepted submissions, commits each one
 separately, then regenerates the table above.
 
+Each submission's README (Approach, Complexity, Key pattern) is generated
+automatically by an LLM call inside `sync.py`, from whatever solution
+file(s) currently sit in that problem's folder. If `ANTHROPIC_API_KEY`
+isn't set, or the call fails, the sync still succeeds — the README just
+falls back to a plain title/difficulty/topics header.
+
 ### Setup
 
 1. Log in to leetcode.com → DevTools (F12) → **Application** → **Cookies** →
@@ -62,6 +68,7 @@ separately, then regenerates the table above.
 2. In this repo: **Settings → Secrets and variables → Actions → New repository secret**:
    - `LEETCODE_SESSION` = the `LEETCODE_SESSION` cookie value
    - `LEETCODE_CSRF_TOKEN` = the `csrftoken` cookie value
+   - `ANTHROPIC_API_KEY` = an API key from [console.anthropic.com](https://console.anthropic.com) (optional — skip it and READMEs just stay bare)
 3. **Actions** tab → **Sync LeetCode** → **Run workflow** for the first sync.
 
 ### Notes
@@ -69,8 +76,11 @@ separately, then regenerates the table above.
 - The session cookie expires every few weeks. When a run fails with
   "cookie is probably expired", copy fresh cookie values into the secrets.
 - `LEETCODE_SESSION` is as sensitive as a password: it lives only in GitHub
-  Secrets, never in this repo.
+  Secrets, never in this repo. Same goes for `ANTHROPIC_API_KEY`.
 - `.leetcode-sync.json` records the newest synced submission so nothing is
   committed twice.
-- Run locally: `LEETCODE_SESSION=... python scripts/sync.py`, then
-  `python scripts/make_index.py`. Set `MAX_PAGES=1` to test quickly.
+- README generation uses `claude-haiku-5-5` by default (set `README_MODEL`
+  to override) — cheap and fast, since the task is a fixed, structured
+  write-up rather than anything requiring deeper reasoning.
+- Run locally: `LEETCODE_SESSION=... ANTHROPIC_API_KEY=... python scripts/sync.py`,
+  then `python scripts/make_index.py`. Set `MAX_PAGES=1` to test quickly.
