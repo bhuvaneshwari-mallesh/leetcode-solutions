@@ -15,11 +15,11 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | [Java, Python](0001-two-sum/) | 2026-11-12 |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Hash Table, String, Sliding Window | [Java](0003-longest-substring-without-repeating-characters/) | 2026-11-12 |
-| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Array, Two Pointers, Greedy | [Java](0011-container-with-most-water/) | 2026-11-12 |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Hash Table, String, Sliding Window | [Java, Python](0003-longest-substring-without-repeating-characters/) | 2026-11-14 |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Array, Two Pointers, Greedy | [Java, Python](0011-container-with-most-water/) | 2026-11-14 |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Array, String, Trie | [Python](0014-longest-common-prefix/) | 2026-11-12 |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium | Array, Two Pointers, Sorting | [Python](0015-3sum/) | 2026-11-13 |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Array, Two Pointers | [Java](0026-remove-duplicates-from-sorted-array/) | 2026-11-12 |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Array, Two Pointers | [Java, Python](0026-remove-duplicates-from-sorted-array/) | 2026-11-14 |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Array, Math, Matrix | [Python](0048-rotate-image/) | 2026-11-12 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Array, Hash Table, String, Sorting | [Python](0049-group-anagrams/) | 2026-11-12 |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium | Array, Divide and Conquer, Dynamic Programming | [Python](0053-maximum-subarray/) | 2026-11-12 |
