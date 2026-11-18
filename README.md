@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**33 problems solved** — 17 easy, 16 medium, 0 hard.
+**34 problems solved** — 18 easy, 16 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -41,6 +41,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect | [Python](0347-top-k-frequent-elements/) | 2026-11-12 |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Two Pointers, String, Dynamic Programming | [Java](0392-is-subsequence/) | 2026-11-12 |
 | 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | Medium | Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort, Counting | [Python](0451-sort-characters-by-frequency/) | 2026-11-12 |
+| 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | Easy | Array, Hash Table, Stack, Monotonic Stack | [Python](0496-next-greater-element-i/) | 2026-11-18 |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | Array, Hash Table, Prefix Sum | [Java](0560-subarray-sum-equals-k/) | 2026-11-12 |
 | 605 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | Easy | Array, Greedy | [Java](0605-can-place-flowers/) | 2026-11-12 |
 | 1071 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](1071-greatest-common-divisor-of-strings/) | 2026-11-12 |
