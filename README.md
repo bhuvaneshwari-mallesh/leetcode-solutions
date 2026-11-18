@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**34 problems solved** — 18 easy, 16 medium, 0 hard.
+**35 problems solved** — 19 easy, 16 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -34,6 +34,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium | Array, Math, Two Pointers | [Java](0189-rotate-array/) | 2026-11-12 |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium | Array, Binary Search, Sliding Window, Prefix Sum | [Java](0209-minimum-size-subarray-sum/) | 2026-11-12 |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table, Sorting | [Java, Python](0217-contains-duplicate/) | 2026-11-12 |
+| 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | Stack, Design, Queue | [Python](0225-implement-stack-using-queues/) | 2026-11-18 |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Python](0226-invert-binary-tree/) | 2026-11-12 |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Array, Prefix Sum | [Java, Python](0238-product-of-array-except-self/) | 2026-11-12 |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | [Java, Python](0242-valid-anagram/) | 2026-11-12 |
