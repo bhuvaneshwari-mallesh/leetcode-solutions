@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**35 problems solved** — 19 easy, 16 medium, 0 hard.
+**37 problems solved** — 21 easy, 16 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -23,8 +23,10 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Array, Math, Matrix | [Python](0048-rotate-image/) | 2026-11-12 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Array, Hash Table, String, Sorting | [Python](0049-group-anagrams/) | 2026-11-12 |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium | Array, Divide and Conquer, Dynamic Programming | [Python](0053-maximum-subarray/) | 2026-11-12 |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | Math, Dynamic Programming, Memoization | [Python](0070-climbing-stairs/) | 2026-11-22 |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | Array, Hash Table, Matrix | [Java](0073-set-matrix-zeroes/) | 2026-11-12 |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | Array, Two Pointers, Sorting | [Java](0088-merge-sorted-array/) | 2026-11-12 |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Python](0104-maximum-depth-of-binary-tree/) | 2026-11-22 |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Array, Dynamic Programming | [Java, Python](0121-best-time-to-buy-and-sell-stock/) | 2026-11-12 |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Two Pointers, String | [Java, Python](0125-valid-palindrome/) | 2026-11-12 |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Array, Hash Table, Union-Find | [Python](0128-longest-consecutive-sequence/) | 2026-11-12 |
