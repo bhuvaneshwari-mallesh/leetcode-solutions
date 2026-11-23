@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**38 problems solved** — 21 easy, 17 medium, 0 hard.
+**40 problems solved** — 21 easy, 19 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -41,6 +41,8 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Python](0226-invert-binary-tree/) | 2026-11-12 |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Array, Prefix Sum | [Java, Python](0238-product-of-array-except-self/) | 2026-11-12 |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | [Java, Python](0242-valid-anagram/) | 2026-11-12 |
+| 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | Array, Binary Search, Dynamic Programming, Longest Increasing Subsequence | [Python](0300-longest-increasing-subsequence/) | 2026-11-23 |
+| 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | Array, Dynamic Programming, Breadth-First Search, Knapsack Problem, Complete Knapsack | [Python](0322-coin-change/) | 2026-11-23 |
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | Easy | Two Pointers, String | [Java](0345-reverse-vowels-of-a-string/) | 2026-11-12 |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect | [Python](0347-top-k-frequent-elements/) | 2026-11-12 |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Two Pointers, String, Dynamic Programming | [Java](0392-is-subsequence/) | 2026-11-12 |
