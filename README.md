@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**40 problems solved** — 21 easy, 19 medium, 0 hard.
+**42 problems solved** — 22 easy, 20 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -19,6 +19,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Array, Two Pointers, Greedy | [Java, Python](0011-container-with-most-water/) | 2026-11-14 |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | Array, String, Trie | [Python](0014-longest-common-prefix/) | 2026-11-12 |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium | Array, Two Pointers, Sorting | [Python](0015-3sum/) | 2026-11-13 |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | String, Stack, Bracket Sequences | [Python](0020-valid-parentheses/) | 2026-11-25 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | Array, Two Pointers | [Java, Python](0026-remove-duplicates-from-sorted-array/) | 2026-11-14 |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Array, Math, Matrix | [Python](0048-rotate-image/) | 2026-11-12 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Array, Hash Table, String, Sorting | [Python](0049-group-anagrams/) | 2026-11-12 |
@@ -51,6 +52,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | Array, Hash Table, Prefix Sum | [Java](0560-subarray-sum-equals-k/) | 2026-11-12 |
 | 605 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | Easy | Array, Greedy | [Java](0605-can-place-flowers/) | 2026-11-12 |
 | 1071 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](1071-greatest-common-divisor-of-strings/) | 2026-11-12 |
+| 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | String, Dynamic Programming, Longest Common Subsequence | [Python](1143-longest-common-subsequence/) | 2026-11-24 |
 | 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | Easy | Array | [Java](1431-kids-with-the-greatest-number-of-candies/) | 2026-11-12 |
 | 1768 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Easy | Two Pointers, String | [Java](1768-merge-strings-alternately/) | 2026-11-12 |
 | 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | Easy | Array, Simulation | [Java](1929-concatenation-of-array/) | 2026-11-12 |
