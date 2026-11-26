@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**43 problems solved** — 22 easy, 21 medium, 0 hard.
+**44 problems solved** — 22 easy, 22 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -24,6 +24,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Array, Math, Matrix | [Python](0048-rotate-image/) | 2026-11-12 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Array, Hash Table, String, Sorting | [Python](0049-group-anagrams/) | 2026-11-12 |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium | Array, Divide and Conquer, Dynamic Programming | [Python](0053-maximum-subarray/) | 2026-11-12 |
+| 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | Array, Dynamic Programming, Greedy | [Python](0055-jump-game/) | 2026-11-26 |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | Math, Dynamic Programming, Memoization | [Python](0070-climbing-stairs/) | 2026-11-22 |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Medium | String, Dynamic Programming | [Python](0072-edit-distance/) | 2026-11-26 |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | Array, Hash Table, Matrix | [Java](0073-set-matrix-zeroes/) | 2026-11-12 |
