@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**44 problems solved** — 22 easy, 22 medium, 0 hard.
+**45 problems solved** — 23 easy, 22 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -38,6 +38,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting, Boyer–Moore Majority Vote Algorithm | [Java](0169-majority-element/) | 2026-11-12 |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium | Array, Math, Two Pointers | [Java](0189-rotate-array/) | 2026-11-12 |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | Array, Dynamic Programming | [Python](0198-house-robber/) | 2026-11-23 |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked List, Recursion | [Python](0206-reverse-linked-list/) | 2026-11-27 |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium | Array, Binary Search, Sliding Window, Prefix Sum | [Java](0209-minimum-size-subarray-sum/) | 2026-11-12 |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table, Sorting | [Java, Python](0217-contains-duplicate/) | 2026-11-12 |
 | 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | Stack, Design, Queue | [Python](0225-implement-stack-using-queues/) | 2026-11-18 |
