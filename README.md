@@ -10,7 +10,7 @@ actually submitted it.
 The table below is generated from the folders by `scripts/make_index.py`.
 
 <!-- BEGIN SOLUTIONS -->
-**45 problems solved** — 23 easy, 22 medium, 0 hard.
+**46 problems solved** — 24 easy, 22 medium, 0 hard.
 
 | # | Problem | Difficulty | Topics | Language | Last solved |
 | ---: | --- | --- | --- | --- | --- |
@@ -54,6 +54,7 @@ The table below is generated from the folders by `scripts/make_index.py`.
 | 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | Easy | Array, Hash Table, Stack, Monotonic Stack | [Python](0496-next-greater-element-i/) | 2026-11-18 |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | Array, Hash Table, Prefix Sum | [Java](0560-subarray-sum-equals-k/) | 2026-11-12 |
 | 605 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | Easy | Array, Greedy | [Java](0605-can-place-flowers/) | 2026-11-12 |
+| 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Array, Binary Search | [Python](0704-binary-search/) | 2026-11-28 |
 | 1071 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](1071-greatest-common-divisor-of-strings/) | 2026-11-12 |
 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | String, Dynamic Programming, Longest Common Subsequence | [Python](1143-longest-common-subsequence/) | 2026-11-24 |
 | 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | Easy | Array | [Java](1431-kids-with-the-greatest-number-of-candies/) | 2026-11-12 |
